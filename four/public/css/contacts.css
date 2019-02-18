@@ -1,0 +1,316 @@
+.contact-form,
+.information {
+  margin-top: 40px;
+}
+.contact-datails {
+  margin-bottom: 12px;
+  min-height: 75px;
+  position: relative;
+}
+.contact-datails .icon {
+  position: absolute;
+}
+.contact-datails .icon i {
+  font-size: 18px;
+}
+.contact-datails .info {
+  padding-left: 30px;
+}
+.contact-datails .info h3 {
+  font-size: 15px;
+  display: block;
+  text-transform: uppercase;
+}
+.contact-datails .info .datail {
+  display: block;
+  color: #888;
+}
+.form-control {
+  background-color: #FFF;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075);
+  color: #444;
+  display: block;
+  height: 55px;
+  padding: 15px 10px;
+  width: 100%;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+/* ==========================================================================
+   .form-control, .form-group .form-control{
+	border: 0;
+    background-image: linear-gradient(@preset, @preset,), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: transparent;
+    transition: background 0s ease-out;
+    float: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 400;
+}
+.form-group.is-focused .form-control {
+  outline: none;
+  background-image: linear-gradient(@preset, @preset), linear-gradient(#D2D2D2, #D2D2D2);
+  background-size: 100% 2px, 100% 1px;
+  box-shadow: none;
+  transition-duration: 0.3s;
+}
+   ========================================================================== */
+.input-icon input {
+  padding-left: 40px;
+}
+.input-icon {
+  position: relative;
+}
+.login-form .input-icon i,
+.cd-form .input-icon i {
+  color: #444;
+  opacity: 0.6;
+  padding-right: 10px;
+  margin-top: -3px;
+}
+.input-icon i {
+  font-size: 15px;
+  left: 12px;
+  line-height: 22px;
+  margin-top: -11px;
+  position: absolute;
+  top: 50%;
+}
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-group i {
+  position: absolute;
+  top: 20px;
+  color: #888;
+  left: 12px;
+  font-size: 18px;
+}
+.checkbox-item {
+  display: inline-block;
+  width: 100%;
+}
+.checkbox-item .checkbox {
+  float: left;
+  margin: 0;
+}
+.checkbox-item a {
+  float: right;
+}
+/* ==========================================================================
+  My Account
+   ========================================================================== */
+.my-account {
+  background: #f5f5f5;
+}
+.my-account-form .cd-switcher:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.my-account-form .cd-switcher li {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.my-account-form .cd-switcher li:first-child a {
+  border-radius: .4px 0 0 0;
+}
+.my-account-form .cd-switcher li:last-child a {
+  border-radius: 0 .4px 0 0;
+}
+.my-account-form .cd-switcher a {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  background: #ff4f57;
+  color: #fff;
+}
+.my-account-form .cd-switcher a.selected {
+  background: #FFF;
+  color: #505260;
+}
+@media only screen and (min-width: 600px) {
+  .my-account-form {
+    margin: 4px auto;
+  }
+  .my-account-form .cd-switcher a {
+    height: 70px;
+    line-height: 70px;
+  }
+}
+#cd-login,
+#cd-signup,
+#cd-reset-password {
+  display: none;
+}
+#cd-login.is-selected,
+#cd-signup.is-selected,
+#cd-reset-password.is-selected {
+  display: block;
+}
+.cd-user-modal-container .cd-switcher a.selected {
+  background: #FFF;
+  color: #666;
+}
+.cd-form-message {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #888;
+}
+.cd-form-bottom-message {
+  text-align: center;
+}
+/* ==========================================================================
+   .form-control:focus,
+	textarea:focus{
+	box-shadow: none;
+	border: 1px solid @preset;
+	outline: none;
+	}
+   ========================================================================== */
+.has-error .form-control:focus {
+  box-shadow: none;
+}
+.addon {
+  font-size: 20px;
+  color: #888;
+  border-radius: 0px;
+  width: 32px!important;
+}
+.box {
+  padding: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.075);
+}
+.page-login-form {
+  padding: 15px;
+  background: #fff;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.075);
+}
+.page-login-form h3 {
+  font-size: 18px;
+  color: #444;
+  line-height: 18px;
+  padding: 15px 0 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.page-login-form .login-form .form-control {
+  background: #ffffff !important;
+}
+.page-login-form .log-btn {
+  width: 100%;
+  padding: 12px 22px;
+  margin: 0px 0px 20px;
+  letter-spacing: 1;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.registration .form-group {
+  margin: 0;
+}
+.registration .form-group .lable {
+  margin-bottom: 10px;
+}
+.registration .form-group .form-control {
+  background: #ffffff !important;
+}
+.registration .btn {
+  padding: 7px 20px;
+  border: none;
+}
+.form-ad .checkbox label {
+  margin-bottom: 0px;
+}
+.control-label {
+  font-size: 14px;
+  color: #888;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.btn-file input[type="file"] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: right;
+  opacity: 0;
+  background: transparent none repeat scroll 0px 0px;
+  cursor: inherit;
+  display: block;
+}
+.file-caption {
+  height: 54px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.form-static {
+  display: inline-block;
+  margin-bottom: 0px;
+  vertical-align: middle;
+}
+.btn-group,
+.btn-group-vertical {
+  margin: 0;
+}
+.btn-select {
+  padding: 12px;
+  border-radius: 2px;
+  color: #2d2d2d !important;
+  background: #fff;
+  text-transform: none;
+}
+.btn-group.open > .dropdown-toggle.btn,
+.btn-group.open > .dropdown-toggle.btn.btn-default,
+.btn-group-vertical.open > .dropdown-toggle.btn,
+.btn-group-vertical.open > .dropdown-toggle.btn.btn-default {
+  background: #fff;
+}
+.btn-group.open .dropdown-toggle {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-group.open .dropdown-toggle:focus {
+  outline: none;
+}
+.dropdown-menu > li > a {
+  padding: 12px 20px;
+  margin-bottom: 4px;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus,
+.dropdown-menu li a:active {
+  background-color: #ff4f57;
+  color: #fff;
+  border-radius: 0px;
+}
+.btn-group.bootstrap-select.dropdown-product ul.dropdown-menu.inner {
+  display: none;
+}
+.btn-group.bootstrap-select.dropdown-product.open ul.dropdown-menu.inner {
+  display: block;
+  z-index: 9999;
+}
+.open .dropdown-menu {
+  margin-top: 0;
+}
+.btn-group .dropdown-menu,
+.btn-group-vertical .dropdown-menu {
+  border-radius: 0px;
+  text-transform: none;
+}
+.input-group-addon {
+  border: none;
+  background: transparent;
+}
