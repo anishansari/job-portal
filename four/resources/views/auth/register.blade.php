@@ -159,7 +159,7 @@
                                <select name="role_id" id="registeras" class="form-control">
                                 <option value="1" >Admin</option>
                                 <option value="2" >Company</option>
-                                <option vallue="3">User</option>
+                                <option value="3">User</option>
                                </select>
 
                                 @if ($errors->has('role_id'))

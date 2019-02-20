@@ -64,11 +64,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-    //      $name=$data['name'];
-    //   $resume=$data->file('resume');
-    //   echo $resume;
-    //   $filename=$name.'.pdf';
-    //   Storage::put('resumes/'.$filename,file_get_contents($data->file('resume')->getRealPath()));
 
         return User::create([
             'name' => $data['name'],

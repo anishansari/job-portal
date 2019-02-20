@@ -18,11 +18,11 @@
                     You may choose an action to get started!!<br><br>
 
    <!--  <a  href="{{url('userview')}}" name="post" id="post" value="Post Job" class="btn btn-primary" >View Users</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-    <a  href="{{url('jobview')}}" name="post" id="post" value="Post Job" class="btn btn-primary" >View All Jobs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="{{url('userview')}}" name="post" id="post" value="Post Job" class="btn btn-primary" >Your  Profile </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="{{url('jobview')}}" name="post" id="post" value="Post Job" class="btn btn-primary" >Job Applied</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="{{url('jobview')}}" name="post" id="post" value="Post Job" class="btn btn-primary" >Selected</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a  href="{{url('jobview')}}" name="post" id="post" value="Post Job" class="btn btn-danger" >Danger Jone</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="{{url('matching')}}" name="post" id="post" value="Post Job" class="btn btn-primary" >View All Jobs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="{{url('profile')}}" name="post" id="post" value="Post Job" class="btn btn-primary" >Your  Profile </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="" name="post" id="post" value="Post Job" class="btn btn-primary" >Job Applied</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="" name="post" id="post" value="Post Job" class="btn btn-primary" >Selected</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="" name="post" id="post" value="Post Job" class="btn btn-danger" >Danger Jone</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     
                 </div>
             </div>
