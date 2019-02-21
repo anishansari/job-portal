@@ -52,6 +52,7 @@ Route::get('/userview','FourController@userview');
 Route::get('/jobview','TestController@jobview');
 Route::get('/candidates','FourController@candidate');
 Route::get('/matching','TestController@match');
+Route::get('/profile','TestController@profile');
 Route::get('/job','FourController@emp');
 Route::post('/postjob','TestController@post');
 Auth::routes();
