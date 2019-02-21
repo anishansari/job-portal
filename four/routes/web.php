@@ -55,9 +55,11 @@ Route::get('/matching','TestController@match');
 Route::get('/profile','TestController@profile');
 Route::get('/job','FourController@emp');
 Route::post('/postjob','TestController@post');
+Route::get('/delete/{id}','TestController@delete');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/view',['uses' => 'TestController@view','as' => 'view.emp']);
 
 // if (request()->has('java'))
 // {

@@ -36,12 +36,10 @@
                         <!-- Split button -->
                         <div >
                            
-                                 <button type="button" class="btn btn-primary btn-lg">
+                                 <button type="button" class="btn btn-primary btn-lg" onclick=" view('{{$id->id}}'")>
                                 Edit</button>
-                                 <button type="button" class="btn btn-danger btn-lg ">
-                                Delete</button>
-                                <button type="button" class="btn btn-primary btn-lg">
-                                Dashboard</button>
+                                <a class="btn btn-danger btn-lg" href="{{url('delete/')}}/{{$id->id}}">Delete</a>
+                                 <a class="btn btn-primary btn-lg" href="{{url('/home')}}">Dashboard</a>
                                             
                         </div>
                     </div>
@@ -73,11 +71,11 @@
             </div>
              <div class="form-group"> 
                 <label>Email:</label>
-            <input type="text" name="name" id="name1" disabled class="form-control" width="500px">
+            <input type="text" name="email" id="email1" disabled class="form-control" width="500px">
             </div>
              <div class="form-group"> 
                 <label>Phone:</label>
-            <input type="text" name="name" id="name1" disabled class="form-control" width="500px">
+            <input type="text" name="phone" id="phone1" disabled class="form-control" width="500px">
             </div>
 
               <div class="form-group">
@@ -86,19 +84,19 @@
                </div>
                <div class="form-group"> 
                 <label>Skill</label>
-                <input type="text" name="usn" id="usn1" disabled class="form-control">
+                <input type="text" name="skills" id="skills1" disabled class="form-control">
                 </div>
                <div class="form-group">
                 <label>Course</label>
-                <input type="text" name="phone" id="phone1" disabled class="form-control">
+                <input type="text" name="course" id="course1" disabled class="form-control">
                </div>
                 <div class="form-group"> 
                 <label>College:</label>
-            <input type="text" name="name" id="name1" disabled class="form-control" width="500px">
+            <input type="text" name="college" id="college1" disabled class="form-control" width="500px">
             </div>
              <div class="form-group"> 
                 <label>Resume:</label>
-            <input type="text" name="name" id="name1" disabled class="form-control" width="500px">
+            <input type="text" name="resume" id="resume1" disabled class="form-control" width="500px">
             </div>
           </form>
         </div>
@@ -125,9 +123,13 @@
             success: function(data)
             { console.log(data);
                $('#name1').val(data.name);
-                $('#age1').val(data.age);
-                $('#usn1').val(data.usn);
+                $('#email1').val(data.email);
                 $('#phone1').val(data.phone);
+                $('#age1').val(data.age);
+                 $('#skills1').val(data.skills);
+                  $('#course1').val(data.course);
+                   $('#college1').val(data.college);
+                    $('#resume1').val(data.resume);
                 $('#myModal').modal('show');
             }
         })
