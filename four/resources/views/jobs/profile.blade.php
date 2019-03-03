@@ -36,7 +36,7 @@
                         <!-- Split button -->
                         <div >
                            
-                                 <button type="button" class="btn btn-primary btn-lg" onclick=" view('{{$id->id}}'")>
+                                 <button type="button" class="btn btn-primary btn-lg" onclick=" view('{{$id->$id}}'")>
                                 Edit</button>
                                 <a class="btn btn-danger btn-lg" href="{{url('delete/')}}/{{$id->id}}">Delete</a>
                                  <a class="btn btn-primary btn-lg" href="{{url('/home')}}">Dashboard</a>

@@ -59,7 +59,7 @@ Route::get('/deletejob','FourController@deletejob');
 Route::get('/jobview','TestController@jobview');
 Route::get('/candidates','FourController@candidate');
 Route::get('/matching','TestController@match');
-Route::get('/profile','TestController@profile');
+Route::get('/profile','FourController@profile');
 Route::get('/job','FourController@emp');
 Route::post('/postjob','TestController@post');
 Route::get('/edit/{id}','FourController@edit');
@@ -69,6 +69,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/view',['uses' => 'FourController@view','as' => 'view.emp']);
 Route::get('/view1',['uses' => 'TestController@view1','as' => 'view1.emp']);
+
 // if (request()->has('java'))
 // {
 // 	$user=App\User::where('skills',request('skills'))=>paginete(5);

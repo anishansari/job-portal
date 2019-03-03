@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+   
+
+   
+</head>
+<body>
 <div class="container col-md-2 col-md-offset-5">
      
     <form method="post" action="{{url('postjob')}}" class="form-group">
@@ -54,5 +63,9 @@
   
 </form>
 </div>
+
+</body>
+</html>
+
 
 @endsection

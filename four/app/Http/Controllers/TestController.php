@@ -72,12 +72,12 @@ public function match(Request $request)
     }
    
 
-public function profile(Request $request)
-{
- $id=Auth::user();
-  return view('jobs.profile',compact('id'));
+// public function profile(Request $request)
+// {
+//  $id=Auth::user();
+//   return view('jobs.profile',compact('id'));
 
-}
+// }
 
 public function view1(Request $request)
     {

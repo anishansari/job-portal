@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -22,6 +23,15 @@
     <a  href="{{url('userview')}}" name="post" id="post" value="Post Job" class="btn btn-danger" >Delete Candidates </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a  href="{{url('jobview')}}" name="post" id="post" value="Post Job" class="btn btn-danger" >Delete Job</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <div class="row"> -->
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title></title>
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      </head>
+      <body>
+       </body>
+      </html>
           <div class="col-xl-3 col-sm-6 mb-3" style="float: left;">
             <div class="card text-white bg-primary o-hidden h-100">
               <div class="card-body">
@@ -92,6 +102,8 @@
         </div>
 
       
+     </body>
+     </html>
      
   
 @endsection

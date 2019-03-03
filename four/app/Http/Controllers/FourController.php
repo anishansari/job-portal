@@ -6,9 +6,13 @@ use Illuminate\Http\Request;
 use App\Four;
 use App\User;
 use App\Test;
+use Storage;
+use DB;
+use Auth;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use Storage;
+
 
 class FourController extends Controller
 {
@@ -76,6 +80,13 @@ public function jobview(){
         return view('jobs.candidate',compact('third','third1'));
 
    }
+
+   public function profile(Request $request)
+{
+ $id=Auth::user();
+  return view('jobs.profile',compact('id'));
+
+}
 
    // public function userupdate( Request $request)
    //  {
