@@ -113,6 +113,24 @@ public function jobview(){
    //      return redirect()->back();
    //  }
 
+public function view(Request $request)
+    {
+        $second =User::where('id',$request->id)->first();
+        return response()->json($second);
+    }
+
+    public function response(Request $request, User $second)
+    {
+      $this->validate($request,['response' =>'required|max:2250']);
+        User::where('id',$second->id)->update(['response' => $request['response'],'updated_by' => Auth::User()->user_id,]);
+      return redirect('secondform/form2');
+    }
+
+
+
+
+
+
     public function candidate(){
     // $job = User::get();
         if (request()->has('skills'))

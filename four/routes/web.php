@@ -67,7 +67,7 @@ Route::get('/delete/{id}','TestController@delete');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/view',['uses' => 'TestController@view','as' => 'view.emp']);
+Route::get('/view',['uses' => 'FourController@view','as' => 'view.emp']);
 
 // if (request()->has('java'))
 // {

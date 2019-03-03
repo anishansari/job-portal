@@ -78,11 +78,9 @@ public function profile(Request $request)
   return view('jobs.profile',compact('id'));
 
 }
-   public function view(Request $request)
-    { 
-        $id1 =User::where('id',$request->id)->first();
-        return response()->json($id1);
-    }
+   
+
+
     public function delete(Request $request)
     {
         $id =User::where('id',$request->id)->delete();

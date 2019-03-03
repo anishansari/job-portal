@@ -79,11 +79,90 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             {{$job2->render()}}
          </div>
-</body>
-</html>
 
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         
+          <h4 class="modal-title">User Details</h4>
+           <button type="button" class="close" data-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group"> 
+                <label>Name:</label>
+            <input type="text" name="name" id="name1" disabled class="form-control" width="500px">
+            </div>
+             <div class="form-group"> 
+                <label>Email:</label>
+            <input type="text" name="email" id="email1" disabled class="form-control" width="500px">
+            </div>
+             <div class="form-group"> 
+                <label>Phone:</label>
+            <input type="text" name="phone" id="phone1" disabled class="form-control" width="500px">
+            </div>
+
+              <div class="form-group">
+                <label>Age:</label>
+                <input type="text" name="age" id="age1" disabled class="form-control">
+               </div>
+               <div class="form-group"> 
+                <label>Skill</label>
+                <input type="text" name="skills" id="skills1" disabled class="form-control">
+                </div>
+               <div class="form-group">
+                <label>Course</label>
+                <input type="text" name="course" id="course1" disabled class="form-control">
+               </div>
+                <div class="form-group"> 
+                <label>College:</label>
+            <input type="text" name="college" id="college1" disabled class="form-control" width="500px">
+            </div>
+             <!-- <div class="form-group"> 
+                <label>Resume:</label>
+            <input type="text" name="resume" id="resume1" disabled class="form-control" width="500px">
+            </div> -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
             
             @endsection
+@section('js')
+
+<script type="text/javascript">
+    function view(id)
+    {
+        $.ajax({
+            method: 'GET',
+            url: "{{ route('view.emp')}}",
+            data: {
+                id: id
+            },
+            success: function(data)
+            { console.log(data);
+               $('#name1').val(data.name);
+                $('#email1').val(data.email);
+                $('#phone1').val(data.phone);
+                $('#age1').val(data.age);
+                 $('#skills1').val(data.skills);
+                  $('#course1').val(data.course);
+                   $('#college1').val(data.college);
+                    $('#resume1').val(data.resume);
+                $('#myModal').modal('show');
+            }
+        })
+    }
+</script>
    
 
 
