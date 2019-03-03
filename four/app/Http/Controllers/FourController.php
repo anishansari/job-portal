@@ -73,9 +73,45 @@ public function jobview(){
         $third=Four::get();
         $third1=Four::FindorFail($id);
         
-        return view('jobs.edituser',compact('third','third1'));
+        return view('jobs.candidate',compact('third','third1'));
 
    }
+
+   // public function userupdate( Request $request)
+   //  {
+        
+   //      Four::where('id',$request['id'])->update([
+   //          'name'=>$request['name'],
+   //          'email'=>$request['email'],
+   //          'mobile'=>$request['mobile'],
+   //          'age'=>$request['age'],
+   //          'location'=>$request['location'],
+   //          'skills'=>$request['skills'],
+   //          'course'=>$request['course'],
+   //          'college'=>$request['college'],
+
+
+   //      ]);
+   //      return redirect()->back();
+   //  }
+   //  public function jobupdate( Request $request)
+   //  {
+        
+   //      Four::where('id',$request['id'])->update([
+   //          'jobtitle'=>$request['jobtitle'],
+   //          'company'=>$request['company'],
+   //          'jdesc'=>$request['jdesc'],
+   //          'skillneed'=>$request['skillneed'],
+   //          'duration'=>$request['duration'],
+   //          'qualification'=>$request['qualification'],
+   //          'experiance'=>$request['experiance'],
+   //          'location'=>$request['location'],
+            
+
+
+   //      ]);
+   //      return redirect()->back();
+   //  }
 
     public function candidate(){
     // $job = User::get();

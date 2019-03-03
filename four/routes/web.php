@@ -47,6 +47,8 @@ Route::get('/deleteuser', function () {
     return view('jobs.deleteuser');
 });
 
+
+
 // Route::get('/register', function () {
 //     return view('jobs.joblist');
 // });
