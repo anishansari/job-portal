@@ -90,6 +90,16 @@ public function jobview(){
 
 }
 
+public function applyjob(Request $request)
+{
+ 
+$id=DB::table('users')->where('id')->get();
+DB::table('users')->update(['status' => 1]);
+return redirect()->back();
+            
+            
+}
+
    // public function userupdate( Request $request)
    //  {
         
@@ -146,6 +156,8 @@ public function view(Request $request)
 
     public function candidate(){
     // $job = User::get();
+
+      
         if (request()->has('skills'))
 {
     $job2=User::where('skills',request('skills'))->paginate(5)->appends('skills',request('skills'));

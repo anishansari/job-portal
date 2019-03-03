@@ -8,12 +8,7 @@
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-    Skills ::
-    <a href="/?skills=java">Java| </a>
-    <a href="/?skills=php">PHP |</a>
-    <a href="/?skills=c#" >C# |</a>
-    <a href="/?skills=c">C |</a>
-     <a href="skills=c">Reset</a>
+   
 <table class="table table-striped table-bordered">
     
     <th>
@@ -32,7 +27,9 @@
             <th>Location </th>
              <th>Resume</th>
              <th> Skills </th>
+             <th> Applied For </th>
              <th> Action </th>
+
                 @foreach($job2 as $show)
         <tr>
             <td>
@@ -56,6 +53,7 @@
             <td>
                 {{$show->skills}}
             </td>
+           
             <td>
                 
                 <button onclick=" view('{{$show->id}}')" class="btn btn-primary" title="View Profile"><i class="far fa-eye"></i></button>

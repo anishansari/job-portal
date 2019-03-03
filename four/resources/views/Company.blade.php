@@ -38,7 +38,7 @@
                 </div>
                 <div class="mr-5">View All Jobs</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="{{url('matching')}}">
+              <a class="card-footer text-white clearfix small z-1" href="{{url('jobview')}}">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="mr-5">View Candidates</div>
               </div>
-              <a class="card-footer text-white clearfix small z-1" href="{{url('deleteuser')}}">
+              <a class="card-footer text-white clearfix small z-1" href="{{url('candidates')}}">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                   <i class="fas fa-angle-right"></i>
