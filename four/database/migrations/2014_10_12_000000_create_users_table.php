@@ -26,7 +26,8 @@ class CreateUsersTable extends Migration
             $table->string('skills');
             $table->string('course');
             $table->string('college');
-            $table->string('role');
+            $table->string('role_id');
+            $table->string('status');
             //$table->string('role');
             $table->rememberToken();
             $table->timestamps();

@@ -20,6 +20,7 @@ Route::get('/jobview', function () {
 Route::get('/matching', function () {
     return view('jobs.jobmatching');	
 });
+
 Route::get('/profile', function () {
     return view('jobs.profile');	
 });
@@ -59,11 +60,13 @@ Route::get('/deletejob','FourController@deletejob');
 Route::get('/jobview','TestController@jobview');
 Route::get('/candidates','FourController@candidate');
 Route::get('/matching','TestController@match');
+Route::get('/jobapplied','TestController@jobapplied');
 Route::get('/profile','FourController@profile');
 Route::get('/job','FourController@emp');
 Route::post('/postjob','TestController@post');
 Route::get('/edit/{id}','FourController@edit');
 Route::get('/delete/{id}','TestController@delete');
+Route::get('/status','TestController@applyjob');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

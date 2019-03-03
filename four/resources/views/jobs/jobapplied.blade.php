@@ -19,7 +19,7 @@
 	<th> Experiance </th>
 	<th> Location</th>
 	<th> Action</th>
-	@foreach ($res as $users)
+	@foreach ($job as $users)
 	<tr>
 		<td>{{$users->id}}</td>
 		<td>{{$users->jobtitle}}</td>
@@ -29,8 +29,7 @@
 		<td>{{$users->experiance}}</td>
 		<td>{{$users->location}}</td>
 		<td>
-			 <button onclick=" " class="btn btn-primary" title="View Profile"><i class="far fa-eye"></i></button>
-			  <button onclick="window.location='{{ url("/status") }}'" class="btn btn-primary" title="Hire"><i class="fa fa-check" aria-hidden="true"></i></button>
+			
 
 
 			 <a class="btn btn-primary" href="{{url('/home')}}" title="Dashboard"><i class="fas fa-tachometer-alt"></i></a>

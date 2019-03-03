@@ -72,6 +72,23 @@ public function match(Request $request)
          return view('jobs.jobmatching',compact('res'));
     }
 
+    public function jobapplied(Request $request)
+   {
+     $job=DB::table('tests')->where('status','1')->get();
+       
+       return view('jobs.jobapplied',compact('job'));
+     }
+
+public function applyjob(Request $request)
+{
+ 
+$id=DB::table('tests')->where('id')->get();
+DB::table('tests')->update(['status' => 1]);
+return redirect()->back();
+            
+            
+}
+
   // public function count{
 
   //   $users = DB::table('users')->count();
