@@ -88,5 +88,7 @@ public function profile(Request $request)
         $id =User::where('id',$request->id)->delete();
           return view('welcome');
     }
+    
+    
 }
 

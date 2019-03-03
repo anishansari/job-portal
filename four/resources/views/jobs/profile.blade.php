@@ -15,7 +15,7 @@
 	
 
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="well well-sm">
                 <div class="row">

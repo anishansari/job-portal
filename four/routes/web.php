@@ -43,11 +43,16 @@ Route::get('/postjob', function () {
 Route::get('/candidates', function () {
     return view('jobs.candidates');
 });
+Route::get('/deleteuser', function () {
+    return view('jobs.deleteuser');
+});
 
 // Route::get('/register', function () {
 //     return view('jobs.joblist');
 // });
 Route::get('/userview','FourController@userview');
+Route::get('/deleteuser','FourController@deleteuser');
+Route::get('/deletejob','FourController@deletejob');
 //Route::get('/register','FourController@register');
 Route::get('/jobview','TestController@jobview');
 Route::get('/candidates','FourController@candidate');
@@ -55,6 +60,7 @@ Route::get('/matching','TestController@match');
 Route::get('/profile','TestController@profile');
 Route::get('/job','FourController@emp');
 Route::post('/postjob','TestController@post');
+Route::get('/edit/{id}','FourController@edit');
 Route::get('/delete/{id}','TestController@delete');
 Auth::routes();
 

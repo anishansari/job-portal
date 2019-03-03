@@ -59,9 +59,8 @@
                 {{$show->location}}
             </td>
             <td>
-                <a class="btn btn-primary" href="{{url('edit/')}}/{{$show->id}}" title="Edit"> <i class="fas fa-edit"></i></a>
-                <button onclick=" view('{{$show->id}}')" class="btn btn-primary" title="View"><i class="far fa-eye"></i></button>
-             
+                
+                <a class="btn btn-danger" href="{{url('delete/')}}/{{$show->id}}" title="Delete"><i class="fas fa-trash-alt"></i></a>
                   <a class="btn btn-primary" href="{{url('/home')}}" title="Dashboard"><i class="fas fa-tachometer-alt"></i></a>
             </td>
         </tr>

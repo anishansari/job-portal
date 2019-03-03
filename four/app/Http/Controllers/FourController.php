@@ -57,6 +57,26 @@ public function jobview(){
     return view('jobs.userlist',compact('job2'));
    }
 
+  public function deleteuser(){
+    // $job = User::get();
+    $job2=User::paginate(5);
+    return view('jobs.deleteuser',compact('job2'));
+   }
+    public function deletejob(){
+    // $job = User::get();
+    //$job = Test::get();
+    $job1=Test::Paginate(5);
+    return view('jobs.deletejob',compact('job1'));
+   }
+
+   public function edit($id){
+        $third=Four::get();
+        $third1=Four::FindorFail($id);
+        
+        return view('jobs.edituser',compact('third','third1'));
+
+   }
+
     public function candidate(){
     // $job = User::get();
         if (request()->has('skills'))
