@@ -43,6 +43,7 @@ class FourController extends Controller
 'skills'=>'abc',
 'course'=>'BE',
 'college'=>'SaiT',
+'status'=>0,
 ]);
 return view('/home');
 }
@@ -84,6 +85,7 @@ public function jobview(){
    public function profile(Request $request)
 {
  $id=Auth::user();
+ 
   return view('jobs.profile',compact('id'));
 
 }

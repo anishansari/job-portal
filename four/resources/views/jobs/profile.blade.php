@@ -33,6 +33,7 @@
                              <h3 > <span class="glyphicon glyphicon-book"></span>  {{$id->course}}</h3>
                              <h3 > <span class="glyphicon glyphicon-book"></span>  {{$id->college}}</h3>
                               <h3 > <span class="glyphicon glyphicon-book"></span>  {{$id->resume}}</h3>
+                              
                         <!-- Split button -->
                         <div >
                            

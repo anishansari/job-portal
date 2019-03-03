@@ -31,6 +31,7 @@ Test::create([
     'qualification'=>$request['qualification'],
     'experiance'=>$request['experiance'],
     'location'=>$request['location'],
+    'status'=>0,
 ]);
 return view('/home');
 }
@@ -70,6 +71,12 @@ public function match(Request $request)
         $res= DB::table('tests')->where('skillneed',$skill)->get();
          return view('jobs.jobmatching',compact('res'));
     }
+
+  // public function count{
+
+  //   $users = DB::table('users')->count();
+  //   return view('jobs.userlist',compact('users'));
+  // }  
    
 
 // public function profile(Request $request)

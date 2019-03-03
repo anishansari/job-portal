@@ -77,6 +77,7 @@ class RegisterController extends Controller
             'course' => $data['course'],
             'college' => $data['college'],
             'role_id'=>$data['role_id'],
+            'status'=>0,
            
         ]);
     }
