@@ -68,7 +68,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/view',['uses' => 'FourController@view','as' => 'view.emp']);
-
+Route::get('/view1',['uses' => 'TestController@view1','as' => 'view1.emp']);
 // if (request()->has('java'))
 // {
 // 	$user=App\User::where('skills',request('skills'))=>paginete(5);

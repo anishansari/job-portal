@@ -68,8 +68,8 @@
             <td>
                  <td>
                 
-                
-                <a class="btn btn-danger" href="{{url('delete/')}}/{{$show->id}}" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                <a class="btn btn-danger" onclick="return confirm('Are you sure?')" href="{{url('delete/')}}/{{$show->id}}"><i class="fa fa-trash"></i></a>
+               <!--  <a class="btn btn-danger" href="{{url('delete/')}}/{{$show->id}}" title="Delete"><i class="fas fa-trash-alt"></i></a> -->
                   <a class="btn btn-primary" href="{{url('/home')}}" title="Dashboard"><i class="fas fa-tachometer-alt"></i></a>
             </td>
         </tr>

@@ -123,7 +123,7 @@ public function view(Request $request)
     {
       $this->validate($request,['response' =>'required|max:2250']);
         User::where('id',$second->id)->update(['response' => $request['response'],'updated_by' => Auth::User()->user_id,]);
-      return redirect('secondform/form2');
+      return redirect()->back();
     }
 
 

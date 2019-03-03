@@ -78,6 +78,19 @@ public function profile(Request $request)
   return view('jobs.profile',compact('id'));
 
 }
+
+public function view1(Request $request)
+    {
+        $second =Test::where('id',$request->id)->first();
+        return response()->json($second);
+    }
+
+    public function response(Request $request, Test $second)
+    {
+      $this->validate($request,['response' =>'required|max:2250']);
+        Test::where('id',$second->id)->update(['response' => $request['response'],'updated_by' => Auth::User()->user_id,]);
+     return redirect()->back();
+    }
    
 
 
