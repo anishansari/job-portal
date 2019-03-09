@@ -22,7 +22,7 @@
          Company Name   <input type="text" name="cname" class="form-control" placeholder="company name">
         </label><br>
          <label class="form-group">   
-         Job Description  <textarea name="jdesc" class="form-control" placeholder="Job Description"></textarea>
+         Job Description Hello   <textarea name="jdesc" class="form-control" placeholder="Job Description"></textarea>
         </label><br>
          <label class="form-group">   
          Skills Required  <select class="form-control" name="Skills">
