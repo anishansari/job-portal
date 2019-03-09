@@ -127,7 +127,7 @@
           </form>
         </div>
         <div class="modal-footer">
-            
+            <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Update</button>
           <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>
         </div>
       </div>
@@ -147,7 +147,8 @@
            <button type="button" class="close" data-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form action="{{ url('update')}}" method="post">
+            @csrf
             <div class="form-group"> 
                 <label>Jobtitle:</label>
             <input type="text" name="jobtitle" id="jobtitle11"  class="form-control" width="500px">
@@ -185,12 +186,13 @@
                 <label>Resume:</label>
             <input type="text" name="resume" id="resume1" disabled class="form-control" width="500px">
             </div> -->
-          </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Update</button>
+            <div class="modal-footer">
+            <button type="submit" class="btn btn-default btn-primary" >Update</button>
           <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>
         </div>
+          </form>
+        </div>
+        
       </div>
       
     </div>

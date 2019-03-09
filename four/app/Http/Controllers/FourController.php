@@ -100,23 +100,23 @@ return redirect()->back();
             
 }
 
-   // public function userupdate( Request $request)
-   //  {
+   public function userupdate( Request $request)
+    {
         
-   //      Four::where('id',$request['id'])->update([
-   //          'name'=>$request['name'],
-   //          'email'=>$request['email'],
-   //          'mobile'=>$request['mobile'],
-   //          'age'=>$request['age'],
-   //          'location'=>$request['location'],
-   //          'skills'=>$request['skills'],
-   //          'course'=>$request['course'],
-   //          'college'=>$request['college'],
+        User::where('id',$request['id'])->update([
+            'name'=>$request['name'],
+            'email'=>$request['email'],
+            'mobile'=>$request['mobile'],
+            'age'=>$request['age'],
+            'location'=>$request['location'],
+            'skills'=>$request['skills'],
+            'course'=>$request['course'],
+            'college'=>$request['college'],
 
 
-   //      ]);
-   //      return redirect()->back();
-   //  }
+        ]);
+        return redirect()->back();
+    }
    //  public function jobupdate( Request $request)
    //  {
         

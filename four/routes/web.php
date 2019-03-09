@@ -68,6 +68,7 @@ Route::get('/edit/{id}','FourController@edit');
 Route::get('/delete/{id}','TestController@delete');
 Route::get('/status','TestController@applyjob');
 Route::get('/hirestatus','FourController@applyjob');
+Route::post('/update','FourController@userupdate');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

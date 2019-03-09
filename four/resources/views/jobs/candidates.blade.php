@@ -27,7 +27,7 @@
             <th>Location </th>
              <th>Resume</th>
              <th> Skills </th>
-             <th> Applied For </th>
+             <!-- <th> Applied For </th> -->
              <th> Action </th>
 
                 @foreach($job2 as $show)

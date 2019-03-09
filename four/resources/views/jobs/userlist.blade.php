@@ -111,6 +111,10 @@
                 <label>Age:</label>
                 <input type="text" name="age" id="age1" disabled class="form-control">
                </div>
+                 <div class="form-group">
+                <label>location:</label>
+                <input type="text" name="location" id="location1" disabled class="form-control">
+               </div>
                <div class="form-group"> 
                 <label>Skill</label>
                 <input type="text" name="skills" id="skills1" disabled class="form-control">
@@ -150,7 +154,9 @@
            <button type="button" class="close" data-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <form>
+           <form action="{{ url('update')}}" method="post">
+            @csrf
+            <input type="hidden" name="id" id="id1">
             <div class="form-group"> 
                 <label>Name:</label>
             <input type="text" name="name" id="name11"  class="form-control" width="500px">
@@ -172,6 +178,10 @@
                 <label>Skill</label>
                 <input type="text" name="skills" id="skills11"  class="form-control">
                 </div>
+                <div class="form-group"> 
+                <label>Skill</label>
+                <input type="text" name="location" id="location11"  class="form-control">
+                </div>
                <div class="form-group">
                 <label>Course</label>
                 <input type="text" name="course" id="course11"  class="form-control">
@@ -184,7 +194,7 @@
                 <label>Resume:</label>
             <input type="text" name="resume" id="resume1" disabled class="form-control" width="500px">
             </div> -->
-             <button type="button" class="btn btn-default btn-primary" onclick="url('{{'/home'}}')">Update</button>
+             <button type="submit" class="btn btn-default btn-primary" >Update</button>
              <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>
 
           </form>
@@ -216,6 +226,7 @@
                 $('#email1').val(data.email);
                 $('#phone1').val(data.mobile);
                 $('#age1').val(data.age);
+                 $('#location1').val(data.location);
                  $('#skills1').val(data.skills);
                   $('#course1').val(data.course);
                    $('#college1').val(data.college);
@@ -234,10 +245,12 @@
             },
             success: function(data)
             { console.log(data);
+              $('#id1').val(data.id)
                $('#name11').val(data.name);
                 $('#email11').val(data.email);
                 $('#phone11').val(data.mobile);
                 $('#age11').val(data.age);
+                $('#location11').val(data.location);
                  $('#skills11').val(data.skills);
                   $('#course11').val(data.course);
                    $('#college11').val(data.college);
