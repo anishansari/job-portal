@@ -117,24 +117,24 @@ return redirect()->back();
         ]);
         return redirect()->back();
     }
-   //  public function jobupdate( Request $request)
-   //  {
+    public function jobupdate( Request $request)
+    {
         
-   //      Four::where('id',$request['id'])->update([
-   //          'jobtitle'=>$request['jobtitle'],
-   //          'company'=>$request['company'],
-   //          'jdesc'=>$request['jdesc'],
-   //          'skillneed'=>$request['skillneed'],
-   //          'duration'=>$request['duration'],
-   //          'qualification'=>$request['qualification'],
-   //          'experiance'=>$request['experiance'],
-   //          'location'=>$request['location'],
+        Four::where('id',$request['id'])->update([
+            'jobtitle'=>$request['jobtitle'],
+            'company'=>$request['company'],
+            'jdesc'=>$request['jdesc'],
+            'skillneed'=>$request['skillneed'],
+            'duration'=>$request['duration'],
+            'qualification'=>$request['qualification'],
+            'experiance'=>$request['experiance'],
+            'location'=>$request['location'],
             
 
 
-   //      ]);
-   //      return redirect()->back();
-   //  }
+        ]);
+        return redirect()->back();
+    }
 
 public function view(Request $request)
     {

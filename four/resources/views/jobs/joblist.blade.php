@@ -86,7 +86,7 @@
            <button type="button" class="close" data-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <form>
+        <form  action="{{ url('jobupdate')}}" method="post">
             <div class="form-group"> 
                 <label>Jobtitle:</label>
             <input type="text" name="jobtitle" id="jobtitle1" disabled class="form-control" width="500px">
@@ -147,7 +147,7 @@
            <button type="button" class="close" data-dismiss="modal"></button>
         </div>
         <div class="modal-body">
-          <form action="{{ url('update')}}" method="post">
+          <form action="{{ url('jobupdate')}}" method="post">
             @csrf
             <div class="form-group"> 
                 <label>Jobtitle:</label>
