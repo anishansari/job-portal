@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+   
+
+   
+</head>
+<body>
 <div class="container col-md-2 col-md-offset-5">
      
     <form method="post" action="{{url('postjob')}}" class="form-group">
@@ -13,7 +22,7 @@
          Company Name   <input type="text" name="cname" class="form-control" placeholder="company name">
         </label><br>
          <label class="form-group">   
-         Job Description  <textarea name="jdesc" class="form-control" placeholder="Job Description"></textarea>
+         Job Description Hello   <textarea name="jdesc" class="form-control" placeholder="Job Description"></textarea>
         </label><br>
          <label class="form-group">   
          Skills Required  <select class="form-control" name="Skills">
@@ -54,5 +63,9 @@
   
 </form>
 </div>
+
+</body>
+</html>
+
 
 @endsection

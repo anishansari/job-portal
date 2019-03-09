@@ -23,6 +23,7 @@ class CreateTestsTable extends Migration
                  $table->string('qualification');
                  $table->string('experiance');
                  $table->string('location');
+                 $table->string('status');
                   $table->timestamps();
         });
     }

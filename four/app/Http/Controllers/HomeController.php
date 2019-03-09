@@ -9,6 +9,7 @@ use Auth;
 
 class HomeController extends Controller
 {
+   
     /**
      * Create a new controller instance.
      *
@@ -28,4 +29,10 @@ class HomeController extends Controller
     {
         return view(Auth::User()->role->name);
     }
+    // public function count()
+    // {
+    //     $count=User::count();
+      
+    // }
+
 }
